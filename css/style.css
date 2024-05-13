@@ -31,6 +31,7 @@ html {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
@@ -57,4 +58,58 @@ body {
   max-width: 1170px;
   width: 96%;
   margin: 0 auto;
+}
+
+.menu-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: #fff;
+  margin: 0 auto;
+  width: min(100%, 1170px);
+}
+.menu-block a {
+  font-family: "Roboto Condensed Bold", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu p {
+  color: #000;
+}
+
+.header__menu ul {
+  display: flex;
+  justify-content: start;
+  margin: 20px;
+}
+.header__menu ul a {
+  padding: 10px;
+  color: #000;
+  font-family: "Roboto Condensed Light", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+.header__menu ul a:hover {
+  color: #ffffff;
+  background-color: #2d3939;
+  text-shadow: 1px 2px #ff5e00;
+}
+.header__socials a {
+  padding: 8px;
+}
+.header__socials a:hover {
+  box-shadow: 3px 5px #ff5e00;
+}
+.header__socials img {
+  width: 25px;
+}
+
+hr {
+  border: 0.3px solid rgba(143, 143, 143, 0.6196078431);
 }/*# sourceMappingURL=style.css.map */
