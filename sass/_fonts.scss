@@ -1,0 +1,29 @@
+// Pokus o napojeni fontu
+@font-face {
+    font-family: 'Deep Hero';
+    src: url('../fonts/deep_hero/Deep-Hero.eot');
+    src: url('../fonts/deep_hero/Deep-Hero.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/deep_hero/Deep-Hero.woff') format('woff'),
+    url('../fonts/deep_hero/Deep-Hero.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed Light';
+    src: url('../fonts/Roboto_Condensed/RobotoCondensed-Light.eot');
+    src: url('../fonts/Roboto_Condensed/RobotoCondensed-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto_Condensed/RobotoCondensed-Light.woff') format('woff'),
+    url('../fonts/Roboto_Condensed/RobotoCondensed-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Bold';
+    src: url('../fonts/Roboto_Condensed/RobotoCondensed-Bold.eot');
+    src: url('../fonts/Roboto_Condensed/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto_Condensed/RobotoCondensed-Bold.woff') format('woff'),
+    url('../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
