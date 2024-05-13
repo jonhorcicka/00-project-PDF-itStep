@@ -30,13 +30,13 @@ body
     display: flex
     align-items: center
     justify-content: space-between
-    padding: 10px 20px
+    padding: 5px 20px
     color: #fff
     margin: 0 auto
     width: min(100%, 1170px)
     a
         @include bold
-        font-size: 23px
+        font-size: 25px
 .menu
     display: flex
     align-items: center
@@ -54,19 +54,191 @@ body
                 @include light
                 font-size: 18px
             a:hover
-                color: #ffffff
-                background-color: #2d3939
-                text-shadow: 1px 2px #ff5e00
+                color: #000000
+                // background-color: #2d3939
+                border: 1px solid #ff5e00
+                box-shadow: 3px 5px #ff5e00
+                // text-shadow: 1px 2px #ff5e008f
+                @include bold
     &__socials
         a
-            padding: 8px
+            padding: 10px
             &:hover
-                // border-bottom: 5px solid #ff5e00
+                border: 1px solid #ff5e00
                 box-shadow: 3px 5px #ff5e00
         img
             width: 25px
+            height: 25px
 hr
     border: 0.3px solid #8f8f8f9e
+// hlavni sekce cislo 1
+.one
+    display: flex
+    &__left, &__right
+        width: 50%
+    &__left
+        align-content: center
+        justify-content: center
+        h1
+            @include h1
+            font-size: 60px
+            margin: 10px
+        p
+            margin: 10px
+    &__right
+        display: flex
+        justify-content: end
+        img
+            width: 500px
+.button
+    margin: 10px
+    margin-top: 20px
+    letter-spacing: 4px
+    text-decoration: none
+    font-size: 33px
+    position: relative
+    background-color: #fff
+    text-transform: uppercase
+    @include h1
+.hover-text
+    position: absolute
+    box-sizing: border-box
+    content: attr(data-text)
+    color: #ff5e00
+    width: 0%
+    inset: 0
+    border-right: 6px solid #ff5e00
+    overflow: hidden
+    transition: 1s
+    -webkit-text-stroke: 1px #ff5e00
+.button:hover .hover-text
+    width: 100%
+    filter: drop-shadow(0 0 23px #ff5e00)
+// vedlejsi sekce cislo 2
+.two
+    display: flex
+    &__left, &__right
+        width: 50%
+    &__left
+        display: flex
+        justify-content: start
+        img
+            width: 500px
+            height: 400px
+            object-fit: cover
+    &__right
+        align-content: center
+        justify-content: center
+        h1
+            @include h1
+            font-size: 60px
+            margin: 10px
+        p
+            margin: 10px
+.three
+    display: flex
+    &__left, &__right
+        width: 50%
+    &__left
+        align-content: center
+        justify-content: center
+        h1
+            @include h1
+            font-size: 60px
+            margin: 10px
+        p
+            margin: 10px
+    &__right
+        display: flex
+        justify-content: end
+        img
+            width: 500px
+            height: 500px
+            object-fit: cover
+.four__mid
+    h1
+        display: flex
+        padding: 30px
+        justify-content: center
+        @include h1
+        font-size: 60px
+    .slider
+        display: flex
+        img
+            width: 300px
+            height: 300px
+            object-fit: cover
+            &:hover
+                width: 100%
+.five
+    h1
+        display: flex
+        padding: 50px
+        padding-top: 80px
+        justify-content: center
+        @include h1
+        font-size: 60px
+    &__grid
+        display: grid
+        grid-template-columns: auto auto auto
+        background-color: #ffffff
+        padding: 10px
+        &-item
+            background-color: rgba(255, 255, 255, 0.8)
+            padding: 60px
+            font-size: 30px
+            text-align: center
+            &:nth-child(-n+3)
+                border-bottom: 1px solid rgba(101, 101, 101, 0.8)
+            &:nth-child(-n+2)
+                border-right: 1px solid rgba(101, 101, 101, 0.8)
+            &:nth-child(n+4)
+                border-right: 1px solid rgba(101, 101, 101, 0.8)
+            &:last-child
+                border-right: none
+            img
+                padding: 20px
+            .bold
+                @include bold
+                padding-bottom: 30px
+                font-size: 22px
+            p
+                font-size: 18px
+.six
+    h1
+        display: flex
+        padding: 50px
+        padding-top: 80px
+        justify-content: center
+        @include h1
+        font-size: 60px
+    &__input
+        display: flex
+        justify-content: center
+        .input
+            display: flex
+            flex-direction: column
+            gap: 10px
+            padding: 10px
+            label
+                @include bold
+            input
+                width: 250px
+                height: 35px
+    &__radio
+        display: flex
+        justify-content: start
+        margin-left: 190px
+        @include bold
+        label
+            margin-right: 20px
+        input
+            margin-right: 10px
+                
+                
+            
+
+
 
 
         
